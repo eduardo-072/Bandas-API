@@ -1,0 +1,50 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+body
+{
+    background-color: rgb(255, 255, 255);
+}
+
+#menu
+{
+    background-color: rgb(48, 45, 45);
+}
+
+
+#menu ul
+{
+    max-width: 1000px;
+    list-style: none;
+    padding: 0;
+}
+#menu ul li
+{
+    display: inline;
+}
+#menu ul li a
+{
+    color: #fff;
+    font-size: 17px;
+    padding: 30px;
+    position: relative;
+    left: 600px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .2s;
+}
+
+#menu ul li a:hover
+{
+    background-color: rgb(10, 128, 224);
+}
+
+#menu ul li:last-child a 
+{
+    position: relative;
+    left: 800px;
+    background-color: rgb(24, 139, 233);
+}

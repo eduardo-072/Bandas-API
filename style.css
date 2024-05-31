@@ -3,18 +3,83 @@
     padding: 0;
     font-family: 'poppins';
 }
-
-#menu
-{
-    background-color: rgb(56, 52, 52);
+body {
+    background-color: rgb(81, 177, 206);
 }
-#menu ul
-{
+
+#menu {
+    background-color: rgb(48, 45, 45);
+}
+
+
+#menu ul {
     max-width: 1000px;
     list-style: none;
-    padding: 30px;
+    padding: 0;
 }
-.pesquisa{
-    
-    margin-left: 800px;
+#menu ul li {
+    display: inline;
+}
+#menu ul li a {
+    margin-right: 0px;
+    color: #fff;
+    font-size: 17px;
+    padding: 30px;
+    position: relative;
+    left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .2s;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(10, 128, 224);
+}
+
+.botão {
+    position: relative;
+    top: 7px;
+    left: 100px;
+    width: 80px;
+    border-radius: 10px;
+    border: 10px black;
+    font-size: 20px;
+    left: 750px;
+}
+
+.botão:hover {
+    background-color: aqua;
+}
+
+.titulo {
+    position: relative;
+    top: 10px;
+    left: 720px;
+    font-size: 30px
+}
+
+.busca {
+
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 10px;
+    width: 300px;
+    position: relative;
+    border: 1px black;
+    border-radius: 10px;
+    top: 20px;
+    left: 900px;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(212, 104, 85);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 800px;
+    border-radius: 40px;
 }

@@ -4,49 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Busca de Bandas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Busca de Bandas</h1>
-  <input type="text" id="searchInput" placeholder="Digite o nome da banda ou artista">
-  <button onclick="searchBand()">Buscar</button>
+
+  
+  <nav id="menu">
+    <ul>
+       
+      <li><a href="https://github.com/eduardo-072" target="_blank" class="linha-1">Meu Github</li></a>
+
+      <li><a href="#" target="_blank" class="linha-2">Co-criadores</li></a>
+
+      <li><a href="https://blog.rolandbrasil.com.br/curiosidades-sobre-musica/" target="_blank" class="linha-3">Curiosidades</li></a>
+
+      <li class="titulo"><strong>Pesquisar</strong></li>
+      
+      <input class="busca" type="text" id="searchInput" placeholder="Digite o nome da banda, cantor ou artista"></li>
+       <button class="botão" onclick="searchBand()">Buscar</button>
+       </div> 
+      </li>
+    </ul>
+  </nav>
+
+  <div class="caixa" ></div>
+   
   <div id="bandInfo"></div>
+<script src="main.js"></script>
 
-  <script>
-    // Função para buscar informações sobre a banda
-    async function searchBand() {
-      const searchTerm = document.getElementById('searchInput').value;
-      const response = await fetch(`https://musicbrainz.org/ws/2/artist/?query=${searchTerm}&fmt=json`);
-      const data = await response.json();
-      displayBandInfo(data.artists);
-    }
-
-    // Função para exibir informações sobre a banda na página
-    function displayBandInfo(artists) {
-      const bandInfoDiv = document.getElementById('bandInfo');
-      bandInfoDiv.innerHTML = '';
-
-      if (artists.length === 0) {
-        bandInfoDiv.innerHTML = '<p>Nenhuma banda encontrada.</p>';
-        return;
-      }
-
-      // Exibindo informações sobre a primeira banda encontrada
-      const band = artists[0];
-      const country = band.country ? band.country : 'Desconhecido';
-      const type = band.type ? band.type : 'Desconhecido';
-      const lifeSpan = band.life_span ? `${band.life_span.begin} - ${band.life_span.end}` : 'Desconhecido';
-      const disambiguation = band.disambiguation ? band.disambiguation : 'N/A';
-
-      const bandInfoHTML = `
-        <h2>${band.name}</h2>
-        <p><strong>País:</strong> ${country}</p>
-        <p><strong>Tipo:</strong> ${type}</p>
-        <p><strong>Período de atividade:</strong> ${lifeSpan}</p>
-        <p><strong>Descrição:</strong> ${disambiguation}</p>
-        <p><a href="https://musicbrainz.org/artist/${band.id}" target="_blank">Ver mais informações sobre a banda</a></p>
-      `;
-      bandInfoDiv.innerHTML = bandInfoHTML;
-    }
-  </script>
 </body>
 </html>
