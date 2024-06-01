@@ -24,12 +24,15 @@ function displayBandInfo(artists) {
   const disambiguation = band.disambiguation ? band.disambiguation : 'N/A';
 
   const bandInfoHTML = `
-    <h2>${band.name}</h2><br>
-    <p><strong>País:</strong> ${country}</p><br>
+    <h2 class="cx-title"><strong>${band.name}</strong></h2><br>
+    <ul>
+    <li><p><strong>País:</strong> ${country}</p><br></li>
     <p><strong>Tipo:</strong> ${type}</p><br>
     <p><strong>Período de atividade:</strong> ${lifeSpan}</p><br>
     <p><strong>Descrição:</strong> ${disambiguation}</p><br>
-    <p><a href="https://musicbrainz.org/artist/${band.id}" target="_blank">Ver mais informações sobre a banda</a></p><br>
+    </ul>
+    <p><a href="https://musicbrainz.org/artist/${band.id}" target="_blank"><button type="button" class="mais-inf">Mais informações</button></a></p><br>
+    
   `;
   bandInfoDiv.innerHTML = bandInfoHTML;
 }

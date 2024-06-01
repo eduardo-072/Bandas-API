@@ -1,50 +1,46 @@
-*
-{
-    padding: 0;
+
+*{
     margin: 0;
-    font-family: Arial;
-}
-body
-{
-    background-color: rgb(255, 255, 255);
+    padding: 0;
+    font-family: 'arial';
 }
 
-#menu
-{
+#menu {
     background-color: rgb(48, 45, 45);
 }
-
-
-#menu ul
-{
-    max-width: 1000px;
+#menu ul {
+    max-width: 1200px;
     list-style: none;
     padding: 0;
 }
-#menu ul li
-{
+#menu ul li {
     display: inline;
 }
-#menu ul li a
-{
+#menu ul li a {
+    margin-right: 0px;
     color: #fff;
     font-size: 17px;
     padding: 30px;
     position: relative;
-    left: 600px;
+    left: 10px;
     display: inline-block;
     text-decoration: none;
     transition: background .2s;
 }
 
-#menu ul li a:hover
-{
-    background-color: rgb(10, 128, 224);
+.botao {
+    padding: 20px 20px; /* espaçamento interno do botão */
+    border: 2px; /* borda azul */
+    color: rgb(209, 105, 105);
+    background-color: transparent; /* fundo transparente */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* transição suave da mudança de cor de fundo e texto */
+    text-decoration: none;
 }
 
-#menu ul li:last-child a 
-{
-    position: relative;
-    left: 800px;
-    background-color: rgb(24, 139, 233);
+.botao:hover {
+    
+    background-color: black; /* cor de fundo azul quando passar o mouse */
+    color: #fff; /* cor do texto branco quando passar o mouse */
 }

@@ -1,3 +1,5 @@
+@import url('https://getbootstrap.com/docs/5.3/components/buttons/#base-class');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 }
 body {
     background-color: rgb(81, 177, 206);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #menu {
@@ -13,7 +16,7 @@ body {
 
 
 #menu ul {
-    max-width: 1000px;
+    max-width: 1200px;
     list-style: none;
     padding: 0;
 }
@@ -37,18 +40,22 @@ body {
 }
 
 .botão {
-    position: relative;
-    top: 7px;
-    left: 100px;
-    width: 80px;
-    border-radius: 10px;
-    border: 10px black;
-    font-size: 20px;
-    left: 750px;
+    padding: 10px 20px; /* espaçamento interno do botão */
+    border: 2px solid rgb(0, 0, 0); /* borda azul */
+    border-radius: 30px;
+    position:absolute;
+    top: 24px;
+    left: 1660px;
+    background-color: transparent; /* fundo transparente */
+    color: rgb(0, 0, 0); /* cor do texto */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .botão:hover {
-    background-color: aqua;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 
 .titulo {
@@ -69,17 +76,55 @@ body {
     border-radius: 10px;
     top: 20px;
     left: 900px;
+    text-decoration: none;
+
 }
 
 .caixa {
-    width: 500px;
-    height: 500px;
-    background-color: rgb(212, 104, 85);
+    background-color: rgb(204, 215, 219);
     display: flex;
-    text-align: center;
-    align-items: center;
+    width: 360px;
+    height: 360px;
+    padding: 0px;
+    padding-left: 30px;
     position: relative;
-    top: 50px;
+    top: 200px;
     left: 800px;
-    border-radius: 40px;
+    border-radius: 30px;
+}
+
+.cx-title {
+    text-align: center;
+}
+.linha {
+    border-bottom: 1px solid black; /* espessura, estilo e cor da linha */
+    width: 100%; /* largura da linha */
+    position: absolute;
+    left: 0;
+    top: 67px;
+
+}
+
+#bandInfo {
+    font-size: 20px;
+    position:absolute;
+    top: 40px;
+}
+
+.mais-inf {
+    padding: 10px 20px; /* espaçamento interno do botão */
+    border: 2px solid blue; /* borda azul */
+    border-radius: 30px;
+    position:absolute;
+    left: 85px;
+    background-color: transparent; /* fundo transparente */
+    color: blue; /* cor do texto */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* transição suave da mudança de cor de fundo e texto */
+}
+
+.mais-inf:hover {
+    background-color: blue; /* cor de fundo azul quando passar o mouse */
+    color: white; /* cor do texto branco quando passar o mouse */
 }
