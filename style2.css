@@ -29,18 +29,18 @@
 }
 
 .botao {
-    padding: 20px 20px; /* espaçamento interno do botão */
-    border: 2px; /* borda azul */
+    padding: 20px 20px; 
+    border: 2px; 
     color: rgb(209, 105, 105);
-    background-color: transparent; /* fundo transparente */
-    font-size: 16px; /* tamanho da fonte */
-    cursor: pointer; /* cursor de ponteiro ao passar o mouse */
-    transition: background-color 0.3s, color 0.3s; /* transição suave da mudança de cor de fundo e texto */
+    background-color: transparent; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
     text-decoration: none;
 }
 
 .botao:hover {
     
-    background-color: black; /* cor de fundo azul quando passar o mouse */
-    color: #fff; /* cor do texto branco quando passar o mouse */
+    background-color: black; 
+    color: #fff; 
 }

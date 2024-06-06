@@ -40,16 +40,16 @@ body {
 }
 
 .botão {
-    padding: 10px 20px; /* espaçamento interno do botão */
-    border: 2px solid rgb(0, 0, 0); /* borda azul */
+    padding: 10px 20px; 
+    border: 2px solid rgb(0, 0, 0); 
     border-radius: 30px;
     position:absolute;
     top: 24px;
     left: 1660px;
-    background-color: transparent; /* fundo transparente */
-    color: rgb(0, 0, 0); /* cor do texto */
-    font-size: 16px; /* tamanho da fonte */
-    cursor: pointer; /* cursor de ponteiro ao passar o mouse */
+    background-color: transparent; 
+    color: rgb(0, 0, 0); 
+    font-size: 16px; 
+    cursor: pointer; 
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -97,8 +97,8 @@ body {
     text-align: center;
 }
 .linha {
-    border-bottom: 1px solid black; /* espessura, estilo e cor da linha */
-    width: 100%; /* largura da linha */
+    border-bottom: 1px solid black;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 67px;
@@ -112,19 +112,19 @@ body {
 }
 
 .mais-inf {
-    padding: 10px 20px; /* espaçamento interno do botão */
-    border: 2px solid blue; /* borda azul */
+    padding: 10px 20px; 
+    border: 2px solid blue;
     border-radius: 30px;
     position:absolute;
     left: 85px;
-    background-color: transparent; /* fundo transparente */
-    color: blue; /* cor do texto */
-    font-size: 16px; /* tamanho da fonte */
-    cursor: pointer; /* cursor de ponteiro ao passar o mouse */
-    transition: background-color 0.3s, color 0.3s; /* transição suave da mudança de cor de fundo e texto */
+    background-color: transparent; 
+    color: blue;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .mais-inf:hover {
-    background-color: blue; /* cor de fundo azul quando passar o mouse */
-    color: white; /* cor do texto branco quando passar o mouse */
+    background-color: blue; 
+    color: white;
 }
